@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Steven Burnett</title>
+
+    <!-- Bootstrap -->
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
+    <%= stylesheet_link_tag "font-awesome.css" %>
+    <%= stylesheet_link_tag "animate.css" %>
+    <%= stylesheet_link_tag "theme.css" %>
+    <%= favicon_link_tag 'computer-41.ico' %>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+	<div class="wrapper" id="wrapper">
+		<header>
+			<div class="banner row" id="banner">
+				<div class="parallax text-center" style="background-image: url(1.jpg);">
+					<div class="parallax-pattern-overlay">
+						<div class="container text-center" style="height:600px;padding-top:170px;">
+							<a href="#"><%= image_tag "profile.png", alt: "", id: "site-title", class: " wow fadeInDown"%>
+							<h2 class="intro"><%= link_to 'My Resume', :controller => :application, :action => :download_pdf %></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="navbar-wrapper">
+					<div class="container">
+						<div class="navwrapper">
+							<div class="navbar navbar-inverse navbar-static-top">
+								<div class="container">
+									<div class="navArea">
+										<div class="navbar-collapse collapse">
+											<ul class="nav navbar-nav">
+												<li class="menuItem active"><a href="#wrapper">Home</a></li>
+												<li class="menuItem"><a href="#aboutus">About Me</a></li>
+												<li class="menuItem"><a href="#specialties">Skills</a></li>
+												<li class="menuItem"><a href="#gallery">Portfolio</a></li>
+												<li class="menuItem"><a href="#feedback">Education</a></li>
+												<li class="menuItem"><a href="#contact">Contact</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+	<!--about Me-->
+	<section class="aboutus" id="aboutus">
+		<div class="container">
+			<div class="heading text-center">
+				<h2>About Me</h2>
+				<h3>I am a software engineer located in Salt Lake City, Utah who is
+					 passionate about making software that helps people in their day to
+					 day life.  I currently work for a company called Instructure
+					 on their main product and LMS called Canvas.  I have a vast amount of
+					 Experience desiging and scaling large web applications and love to
+					 learn new and better ways to tackle difficult problems.
+					 Outside of work I love making mobile applications.I have created
+					 several mobile applications for both Android and IOS and was the
+					 Teaching Assistant for the mobile application course at the
+					 Universtity of Utah for a little over a year.  I also have a vast
+					 amount of Web Application experience.  Using languages and
+					 architectures such as angular.js, php, and ruby on rails
+					 (which was used to make this website) React, Redux, Ember,
+					 Backbone and many more.</h3>
+			</div>
+			<div class="row" style="text-align: center;">
+				<div class="col-md-6"  style="display: inline-block; float: none;">
+					<div class="papers text-center">
+						<%= image_tag "gradPic.png", alt: "" %>
+						<%= link_to 'Download my resume', :controller => :application, :action => :download_pdf %>
+						<h4 class="">Steven Burnett</h4>
+						<p>
+							Computer Science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.<br>
+							- Eric Raymond
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<!--skills-->
+	<section class="specialties" id="specialties">
+		<div class="container">
+			<div class="heading text-center">
+				<h2>My Skills</h2>
+				<h3>I have several years of experience in software development.  Some languages and IDEs I have experience with are:<br>
+				    IDEs: Vim, Android Studio, Eclipse, Xcode, Visual Studios, Emacs, Sublime, Idle, Parse, intellij, Ruby Mine, Atom, and many more <br>
+				    Languages and Frameworks: Swift, Objective-c, Java, Python, Ruby, html, css, javascript, backbone, underscore, ember, perl, bash, C#, SQL, C++, xsl, xslt, xml, coffeescript, C, redux, react, react-native, and many more </h3>
+			</div>
+		</div>
+
+		<div class="container">
+            <div class="row">
+				<div class="col-md-6 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s"">
+					<div class="skill">
+						<div class="progress-wrap">
+							<h3>Programming experience</h3>
+							<div class="progress">
+							  <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+								<span class="bar-width">6yrs</span>
+							  </div>
+
+							</div>
+						</div>
+
+						<div class="progress-wrap">
+							<h3>Java</h3>
+							<div class="progress">
+							  <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+							   <span class="bar-width">3yrs</span>
+							  </div>
+							</div>
+						</div>
+
+						<div class="progress-wrap">
+							<h3>Objective-c</h3>
+							<div class="progress">
+							  <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+								<span class="bar-width">2yrs</span>
+							  </div>
+							</div>
+						</div>
+
+						<div class="progress-wrap">
+							<h3>Ruby</h3>
+							<div class="progress">
+							  <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+								<span class="bar-width">2yrs</span>
+							  </div>
+							</div>
+						</div>
+
+						<div class="progress-wrap">
+							<h3>Javascript/React</h3>
+							<div class="progress">
+								<div class="progress-bar color5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+								<span class="bar-width">1yr</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-md-6 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.6s"">
+					<%= image_tag "https://raw.githubusercontent.com/junegunn/i/master/fzf.gif", class: "img-responsive" %>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--portfolio-->
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<div class="heading text-center">
+				<h2>Portfolio</h2>
+				<h3>Below is the projects and companies I have worked for in the last
+					6 years. Click on the pictures of more information and or screenshots
+					of the projects. If you have any questions about the projects, or
+					would like to possibly see the source code for them please leave a
+					comment below or check out my github page which is linked below.</h3>
+			</div>
+
+			<div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<a href="https://github.com/TheLoons/SportIM-web"><%= image_tag "SportIM.png", alt: "" %></a>
+								<figcaption>
+									<h3>SportIM</h3>
+									<p>Sport Management Website. AngularJS, Java/MySql</p>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<%= image_tag "MedUsaLogo.png", alt: "" %>
+								<figcaption>
+									<h3>Med USA</h3>
+									<p>Patient Checkin App.  Objective C, SQL</p>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="https://itunes.apple.com/us/app/push-notifications-made-for/id920862239?mt=8"><%= image_tag "push.png", alt: "" %></a>
+								<figcaption>
+									<h3>Push</h3>
+									<p>Push notifications on interested events. Objective-c, Parse Cloud, Computing</p>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="https://github.com/sdb1228/Dominion"><%= image_tag "dominion.jpg", alt: "" %></a>
+								<figcaption>
+									<h3>Dominion</h3>
+									<p>Card Game App.  Java</p>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="http://soccerlc.com/"><%= image_tag "soccerlc.png", alt: "" %></a>
+								<figcaption>
+									<h3>SoccerLC</h3>
+									<p>A schedule manager for local soccer facilities.  Gained
+									experience in the software development life cycle including
+								  scaling, maintence, and user interface.
+									Scrapers were written in ruby/python, server written in golang,
+								  Front end written in react with redux, apps written in java,
+								  swift, objective-c and java</p>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="http://www.foxbytes.io/"><%= image_tag "foxbytes.png", alt: "" %></a>
+								<figcaption>
+									<h3>FoxBytes</h3>
+									<p>Created a company that created beautiful, interactive
+									   applications for users of any scale. React-Native IOS Android</p>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="https://itunes.apple.com/us/app/pretty-random-random-number/id1126199480?mt=8"><%= image_tag "prettyrandom.png", alt: "" %></a>
+								<figcaption>
+									<h3>Pretty Random</h3>
+									<p>A random number generator with modern styles and fun animations. React-Native
+									</p>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="http://www.youthvillage.org/"><%= image_tag "utahyouthvillage.png", alt: "" %></a>
+								<figcaption>
+									<h3>Utah Youth Village</h3>
+									<p>Developed an IOS app that helped their specialists who were
+										 teaching in the field.  Objective C IOS</p>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="http://www.eng.utah.edu/~cs4962/"><%= image_tag "utes.gif", alt: "" %></a>
+								<figcaption>
+									<h3>Teaching Assistant</h3>
+									<p>Helped students create assigned projects as well as lectured when professor was out. Java, Android, Objective-c, IOS </p>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="http://www.instructure.com/"><%= image_tag "canvas.png", alt: "" %></a>
+								<figcaption>
+									<h3>Instructure</h3>
+									<p>Worked on various projects on their main product Canavs.  Ruby on rails, backbone, underscore, coffeescript, javascript, ember, react</p>
+								</figcaption>
+							</figure>
+						</li>
+
+						<li>
+							<figure>
+								<a href="http://munkee.co/"><%= image_tag "munkee.png", alt: "" %></a>
+								<figcaption>
+									<h3>Munkee</h3>
+									<p>Worked on and created various apps that company thought was valuable.  Objective-C, Java, Parse, AWS, Cloud Computing</p>
+								</figcaption>
+							</figure>
+						</li>
+
+						<li>
+							<figure>
+								<a href="https://www.spillman.com/"><%= image_tag "spillman.gif", alt: "" %></a>
+								<figcaption>
+									<h3>Spillman</h3>
+									<p>Created Statelink screens that ran inside of mobile units vehicles.  Java, XSL, XSLT</p>
+								</figcaption>
+							</figure>
+						</li>
+
+					</ul>
+				</section><!-- // end small images -->
+
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<%= image_tag "medusa1.png", alt: "" %>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<%= image_tag "medusa3.png", alt: "" %>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<%= image_tag "medusa2.png", alt: "" %>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<%= image_tag "work5.jpg", alt: "" %>
+							</figure>
+						</li>
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // end slideshow -->
+			</div><!-- // grid-gallery -->
+		</div>
+	</section>
+
+	<!--education-->
+	<section class="feedback" id="feedback">
+		<div class="container">
+			<div class="heading">
+				<h2>Education</h2>
+				<h3> I graduated from Cottonwood high school in 2010 and <br>
+				after one year of playing soccer for Westminster college I transfered to the<br> University of Utah to complete my bachelors</h3>
+			</div>
+		</div>
+
+		<div class="container" style= "text-align: center";>
+			<div class="col-md-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s" style= "display: inline-block; float: none;">
+				<div class="text-center">
+					<div class="hi-icon-wrap hi-icon-effect">
+						<h4>BACHELORS OF COMPUTER SCIENCE</h4>
+						<h5>AUG 2011 - MAY 2015</h5>
+						<i class="fa fa-book"></i>
+						<p>University of Utah's Deans List. Graduating class of 2015 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- 		<div class="container">
+			<div class="row">
+				<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages." <cite>Jogn De, Programming<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite> </blockquote>
+				<blockquote>Have you ever felt worried that your party will not raise up to your guest expectations? In design, vertical rhythm is the structure that guides a reader’s eye through the content. Good vertical rhythm makes a layout more balanced and beautiful and its content more readable. The time signature in sheet music visually depicts a song’s rhythm, while for us, the lines of the baseline grid depict the rhythm of our content and give us guidelines. <cite>Marta Kay, Business Development<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite> </blockquote>
+			</div>
+		</div> -->
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="heading">
+				<h2>Contact</h2>
+				<h3>If you have any questions about my information, or would like to contact me<br>
+				 about possible contracting oppportunities you can send me an email below or drop a line below</h3>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<!-- <div class="col-md-7">
+					<div class="map">
+						<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Kuningan,+Jakarta+Capital+Region,+Indonesia&amp;aq=3&amp;oq=kuningan+&amp;sll=37.0625,-95.677068&amp;sspn=37.410045,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=Kuningan&amp;t=m&amp;z=14&amp;ll=-6.238824,106.830177&amp;output=embed">
+						</iframe>
+					</div>
+				</div>
+ -->
+				<div class="contact-info">
+					<div class="col-md-5">
+						<h4>My Contact Info</h4>
+						<ul>
+							<li><i class="fa fa-envelope fa-2x"></i><a href="mailto:stevendburnett@gmail.com" target="_top">Email</a></li>
+							<li><i class="fa fa-download fa-2x"></i> <%= link_to 'Download My Resume', :controller => :application, :action => :download_pdf %></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+		  <div class="row">
+			<div class="done">
+				<div class="alert alert-success">
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					Your message has been sent. Thank you!
+				</div>
+			</div>
+		   <form method="post" action="/comments" id="contactform">
+			  <input name="name" type="text" class="contact col-md-6" placeholder="Name *" >
+			  <input name="email" type="email" class="contact noMarr col-md-6" placeholder="E-mail address *" >
+			  <textarea name="comment" class="contact col-md-12" placeholder="Message *"></textarea>
+			  <input type="submit" id="submit" class="contact submit" value="Send message">
+			</form>
+		  </div>
+		</div>
+	</section>
+
+	<!--footer-->
+	<section class="footer" id="footer">
+		<p class="text-center">
+			<a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+		</p>
+		<div class="container">
+			<ul>
+				<li><a href="https://twitter.com/sdb1228"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.facebook.com/steven.burnett.12"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.linkedin.com/profile/view?id=247834932&trk=nav_responsive_tab_profile"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://github.com/sdb1228"><i class="fa fa-github-square"></i></a></li>
+			</ul>
+			<p>
+				&copy; 2015 <a target="_blank" href="http://bootstraptaste.com/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">bootstraptaste</a>. All Rights Reserved.
+			</p>
+		</div>
+	</section>
+
+	</div>
+	<%= javascript_include_tag "jquery.js" %>
+	<%= javascript_include_tag "modernizr.js" %>
+	<%= javascript_include_tag "bootstrap.min.js" %>
+	<%= javascript_include_tag "menustick.js" %>
+	<%= javascript_include_tag "parallax.js" %>
+	<%= javascript_include_tag "easing.js" %>
+	<%= javascript_include_tag "wow.js" %>
+	<%= javascript_include_tag "smoothscroll.js" %>
+	<%= javascript_include_tag "masonry.js" %>
+	<%= javascript_include_tag "imgloaded.js" %>
+	<%= javascript_include_tag "classie.js" %>
+	<%= javascript_include_tag "colorfinder.js" %>
+	<%= javascript_include_tag "gridscroll.js" %>
+	<%= javascript_include_tag "contact.js" %>
+	<%= javascript_include_tag "common.js" %>
+	<script>
+	wow = new WOW(
+	 {
+
+		}	)
+		.init();
+	</script>
+	<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  //enabling stickUp on the '.navbar-wrapper' class
+	$('.navbar-wrapper').stickUp({
+		parts: {
+		  0: 'banner',
+		  1: 'aboutus',
+		  2: 'specialties',
+		  3: 'gallery',
+		  4: 'feedback',
+		  5: 'contact'
+		},
+		itemClass: 'menuItem',
+		itemHover: 'active',
+		topMargin: 'auto'
+		});
+	});
+});
+</script>
+  </body>
+</html>
